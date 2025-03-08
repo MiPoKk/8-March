@@ -38,7 +38,7 @@ function FlowerAnimation({ onRestart }) {
         transition={{ duration: 2 }}
       >
         <motion.p className="text-xl text-pink-600 mb-4">
-          Хотілось би подарувати вживу, але через відстань поки що лише такі 🌸
+          Хотілось би подарувати in real life, але через відстань поки що лише такі 🌸
         </motion.p>
         <motion.div
           className="flex justify-center gap-4 text-8xl"
@@ -51,7 +51,7 @@ function FlowerAnimation({ onRestart }) {
           <motion.span animate={{ y: [0, -10, 0] }} transition={{ repeat: Infinity, duration: 1.9 }}>💐</motion.span>
         </motion.div>
         <button onClick={onRestart} className="mt-6 bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded-lg">
-          Спочатку 🔄
+          З СВЯТОМ!😘
         </button>
       </motion.div>
     </div>
@@ -67,15 +67,15 @@ export default function WomensDayGreeting() {
 
   const messages = [
     "Нехай цей день буде сповнений радості та тепла! 🌺",
-    "Бажаємо здійснення всіх мрій та натхнення! 🌟",
+    "Бажаю здійснення всіх мрій та натхнення! 🌟",
     "Хай кожен день буде сповнений усмішками та любов’ю! 💖",
     "Нехай весна дарує яскраві емоції та щасливі миті! 🌸",
     "Ви гідні найкращого, хай здійснюються всі бажання! 🎉",
     "Залишайтеся завжди такими чарівними та неповторними! 🌷",
     "Нехай удача завжди буде поруч з вами! 🍀",
-    "Бажаємо гармонії, тепла та душевного спокою! 🕊️",
+    "Бажаю гармонії, тепла та душевного спокою! 🕊️",
     "Ваша краса та сила надихають! 💪",
-    "Хай кожен день буде сповнений світлом та добром! ☀️"
+    "Хай кожен день буде сповнений лише позитивних емоцій! ☀️"
   ];
 
   if (page > 0 && page < messages.length) {
@@ -94,13 +94,14 @@ export default function WomensDayGreeting() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        З 8 Березня, дорогі жінки!
+        З 8 Березня!
       </motion.h1>
       <button onClick={nextPage} className="bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded-lg">
-        Показати привітання 💐
+        Рухаємось далі 💐
       </button>
     </div>
   );
 }
+
 
 
